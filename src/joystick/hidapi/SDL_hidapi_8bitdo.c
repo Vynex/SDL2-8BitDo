@@ -145,6 +145,7 @@ static SDL_bool HIDAPI_Driver8BitDo_IsSupportedDevice(SDL_HIDAPI_Device *device,
         case USB_PRODUCT_8BITDO_PRO_2_BT:
         case USB_PRODUCT_8BITDO_PRO_3:
         case USB_PRODUCT_8BITDO_ULTIMATE2_WIRELESS:
+        case USB_PRODUCT_8BITDO_ULTIMATE_MG:
             return SDL_TRUE;
         default:
             break;
@@ -220,6 +221,8 @@ static SDL_bool HIDAPI_Driver8BitDo_InitDevice(SDL_HIDAPI_Device *device)
         HIDAPI_SetDeviceName(device, "8BitDo Pro 2");
     } else if (device->product_id == USB_PRODUCT_8BITDO_PRO_3) {
         HIDAPI_SetDeviceName(device, "8BitDo Pro 3");
+    } else if (device->product_id == USB_PRODUCT_8BITDO_ULTIMATE_MG) {
+        HIDAPI_SetDeviceName(device, "8BitDo Ultimate MG");
     }
 
     return HIDAPI_JoystickConnected(device, NULL);

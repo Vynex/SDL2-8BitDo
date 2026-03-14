@@ -66,6 +66,7 @@
 #define USB_PRODUCT_8BITDO_PRO_2_BT                       0x6006 /* mode switch to D */
 #define USB_PRODUCT_8BITDO_PRO_3                          0x6009 /* mode switch to D */
 #define USB_PRODUCT_8BITDO_ULTIMATE2_WIRELESS             0x6012 /* mode switch to BT */
+#define USB_PRODUCT_8BITDO_ULTIMATE_MG                    0x301E
 #define USB_PRODUCT_8BITDO_XBOX_CONTROLLER1               0x2002 /* Ultimate Wired Controller for Xbox */
 #define USB_PRODUCT_8BITDO_XBOX_CONTROLLER2               0x3106 /* Ultimate Wireless / Pro 2 Wired Controller */
 #define USB_PRODUCT_AMAZON_LUNA_CONTROLLER                0x0419
